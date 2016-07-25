@@ -2,7 +2,7 @@ package it.morfoza;
 
 import java.util.Scanner;
 
-
+// comment :)
 public class Main {
     public static void main(String[] args) {
 
