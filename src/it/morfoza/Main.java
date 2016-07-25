@@ -1,8 +1,6 @@
 package it.morfoza;
 
-/**
- * Created by HP 15 on 2016-07-25.
- */
+import java.util.Scanner;
 
 
 public class Main {
@@ -11,6 +9,9 @@ public class Main {
         int result = 2 + 2;
 
         System.out.println("Hola!!!!");
+
+        Scanner input = new Scanner(System.in);
+
         System.out.println("Your result is : " + result );
 
     }
