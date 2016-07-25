@@ -8,6 +8,10 @@ package it.morfoza;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Hola!");
+        int result = 2 + 2;
+
+        System.out.println("Hola!!!!");
+        System.out.println("Your result is : " + result );
+
     }
 }
