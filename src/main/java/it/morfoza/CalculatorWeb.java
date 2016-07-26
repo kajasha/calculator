@@ -18,7 +18,7 @@ public class CalculatorWeb {
 
         Spark.get(
                 "/calculator",
-                (reqest, response) -> {return "<html>Hi <b> buddy </b>!</html>";}
+                (reqest, response) -> {return "<html> <h1> Sialalalala </h1> <b> lalalalala </b>!</html>";}
                 );
         Spark.get(
                 "/contact",
