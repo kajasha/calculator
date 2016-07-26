@@ -1,1 +1,1 @@
-<html> <h1> <font color="#0000FF"> Sialalalala </h1> </font> <b> Your numbers: </b> ${number1},${number2} and the result is....10</html>
+<html> <h1> <font color="#0000FF"> Sialalalala </h1> </font> <b> Your numbers: </b> ${number1},${number2} and the result is....</html>
