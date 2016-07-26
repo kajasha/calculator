@@ -29,6 +29,7 @@ public class CalculatorWeb {
                             + "</html>";
 
                 });
+
         Spark.get(
                 "/contact",
                 ((request, response) -> {
