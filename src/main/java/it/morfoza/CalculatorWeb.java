@@ -1,7 +1,12 @@
 package it.morfoza;
 
+import com.sun.javafx.collections.MappingChange;
+import spark.ModelAndView;
 import spark.Spark;
+import spark.template.freemarker.FreeMarkerEngine;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.function.BiFunction;
 
 public class CalculatorWeb {
@@ -27,15 +32,14 @@ public class CalculatorWeb {
 
                     int result = number1a + number2a;
 
-                    return "<html> <h1> <font color=\"#0000FF\"> Sialalalala </h1> </font> <b> Your numbers: </b>"
-                            + number1
-                            + ","
-                            + number2
-                            + "and the result is...."
-                            + result
-                            + "</html>";
+                    Map<String, Object> model = new HashMap();
+                    model.put("result", result);
+                    model.put("number1", number1);
+                    model.put("number2", number2);
 
-                });
+                    return new ModelAndView(model, "result.ftl");
+                }, new FreeMarkerEngine());
+
 
         Spark.get(
                 "/contact",
