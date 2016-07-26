@@ -18,7 +18,7 @@ public class CalculatorWeb {
 
         Spark.get(
                 "/calculator",
-                (reqest, response) -> {return "<html> <h1> <font color=\"#0000FF\"> Sialalalala </h1> </font> <b> lalalalala </b>! <img src= "C:\Users\HP 15\Desktop\6c4.gif"> </html>";}
+                (reqest, response) -> {return "<html> <h1> <font color=\"#0000FF\"> Sialalalala </h1> </font> <b> lalalalala </b>! </html>";}
                 );
         Spark.get(
                 "/contact",
