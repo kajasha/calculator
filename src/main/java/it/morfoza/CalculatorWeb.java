@@ -22,10 +22,17 @@ public class CalculatorWeb {
                     String number1 = reqest.queryParams("number1");
                     String number2 = reqest.queryParams("number2");
 
+                    int number1a = Integer.parseInt(number1);
+                    int number2a = Integer.parseInt(number2);
+
+                    int result = number1a + number2a
+
                     return "<html> <h1> <font color=\"#0000FF\"> Sialalalala </h1> </font> <b> Your numbers: </b>"
                             + number1
                             + ","
                             + number2
+                            + "and the result is...."
+                            + result
                             + "</html>";
 
                 });
