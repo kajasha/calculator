@@ -18,8 +18,17 @@ public class CalculatorWeb {
 
         Spark.get(
                 "/calculator",
-                (reqest, response) -> {return "<html> <h1> <font color=\"#0000FF\"> Sialalalala </h1> </font> <b> lalalalala </b>! </html>";}
-                );
+                (reqest, response) -> {
+                    String number1 = reqest.queryParams("number1");
+                    String number2 = reqest.queryParams("number2");
+
+                    return "<html> <h1> <font color=\"#0000FF\"> Sialalalala </h1> </font> <b> Your numbers: </b>"
+                            + number1
+                            + ","
+                            + number2
+                            + "</html>";
+
+                });
         Spark.get(
                 "/contact",
                 ((request, response) -> {
