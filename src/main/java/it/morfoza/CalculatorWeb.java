@@ -14,6 +14,8 @@ public class CalculatorWeb {
 
     public static void main(String[] args) {
 
+        Spark.staticFileLocation("/webfiles");
+
         String port = System.getenv("PORT");
         if (port != null) {
             int portInt = Integer.parseInt(port);
