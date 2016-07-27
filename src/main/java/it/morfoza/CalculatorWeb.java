@@ -35,24 +35,23 @@ public class CalculatorWeb {
 
                     Map<String, Object> model = new HashMap();
                     model.put("result", result);
-                    model.put("number1", number1);
-                    model.put("number2", number2);
+
 
                     return new ModelAndView(model, "result.ftl");
                 }, new FreeMarkerEngine());
 
 
-        Spark.get(
-                "/contact",
-                ((request, response) -> {
-                    return "<html>" +
-                            "<form action=\"/calculator\">" +
-                            "<input name=\"number1\">" +
-                            "<input name=\"number2\">" +
-                            "<input type=\"submit\">" +
-                            "</form>" +
-                            "<html>";
-                }));
+//        Spark.get(
+//                "/contact",
+//                ((request, response) -> {
+//                    return "<html>" +
+//                            "<form action=\"/calculator\">" +
+//                            "<input name=\"number1\">" +
+//                            "<input name=\"number2\">" +
+//                            "<input type=\"submit\">" +
+//                            "</form>" +
+//                            "<html>";
+//                }));
         Spark.get(
                 "/calculator2",
                 (reqest, response) -> {
@@ -106,7 +105,20 @@ public class CalculatorWeb {
                             "</form>" +
                             "<html>";
                 }));
+        Spark.get(
+                "/rejestracja",
+                (reqest, response) -> {
+                    String name = reqest.queryParams("name");
+                    String surname = reqest.queryParams("surname");
+                    String user = "Pan " + name + " : " + surname;
 
+
+                    Map<String, Object> model = new HashMap();
+                    model.put("atrybut", user);
+
+
+                    return new ModelAndView(model, "user.ftl");
+                }, new FreeMarkerEngine());
     }
 
 
