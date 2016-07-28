@@ -22,6 +22,8 @@ public class CalculatorWeb {
             Spark.port(portInt);
         }
 
+        Spark.port(80);
+
         Spark.get(
                 "/calculator",
                 (reqest, response) -> {
@@ -31,7 +33,7 @@ public class CalculatorWeb {
                     int number1a = Integer.parseInt(number1);
                     int number2a = Integer.parseInt(number2);
 
-                    int result = number1a + number2a;
+                    int result = Calculator.add(number1a, number2a);
 
                     Map<String, Object> model = new HashMap();
                     model.put("result", result);
