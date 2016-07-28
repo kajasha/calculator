@@ -2,10 +2,13 @@ package it.morfoza;
 
 public class Calculator {
 
-    public static int add(int number1a, int number2a) {
-        int result;
-        result = number1a + number2a;
-        return result;
+    public static int add(int number1, int number2) {
+        return number1 + number2;
 
+
+    }
+
+    public static int subtract(int number1, int number2) {
+        return number1 - number2;
     }
 }

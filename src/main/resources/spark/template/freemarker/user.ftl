@@ -1,1 +1,1 @@
-<html> <h1> <font color="#0000FF"> BLABLABLA </h1> </font>  ${name}, ${surname} </html>
+<html> <h1> <font color="#0000FF"> Witamy w naszej firmie</h1> </font>  ${atrybut} </html>
