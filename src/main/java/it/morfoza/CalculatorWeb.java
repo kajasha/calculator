@@ -1,13 +1,11 @@
 package it.morfoza;
 
-import com.sun.javafx.collections.MappingChange;
 import spark.ModelAndView;
 import spark.Spark;
 import spark.template.freemarker.FreeMarkerEngine;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.function.BiFunction;
 
 public class CalculatorWeb {
 
