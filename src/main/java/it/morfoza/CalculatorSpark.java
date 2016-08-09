@@ -7,10 +7,10 @@ import spark.template.freemarker.FreeMarkerEngine;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CalculatorWeb {
+public class CalculatorSpark {
 
 
-    public static void main(String[] args) {
+    public static void runOnSpark (String[] args) {
 
         Spark.staticFileLocation("/webfiles");
 
