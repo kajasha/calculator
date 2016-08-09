@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar  target/calculator.jar
+web: java -Dserver.port=$PORT -jar  target/calculator-1.0-SNAPSHOT.jar
