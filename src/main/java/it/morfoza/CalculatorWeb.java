@@ -20,8 +20,6 @@ public class CalculatorWeb {
             Spark.port(portInt);
         }
 
-        Spark.port(80);
-
         Spark.get(
                 "/calculator",
                 (request, response) -> {
