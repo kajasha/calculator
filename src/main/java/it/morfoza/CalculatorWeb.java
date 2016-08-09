@@ -104,6 +104,18 @@ public class CalculatorWeb {
                     return new ModelAndView(model, "user.ftl");
                 }, new FreeMarkerEngine());
 
+        Spark.get(
+                "/sparktest",
+                (request, response) -> {
+
+
+                    Map<String, Object> model = new HashMap();
+
+
+                    return new ModelAndView(model, "test.ftl");
+                },
+                new FreeMarkerEngine());
+
 
         Spark.get(
                 "/contact3",
